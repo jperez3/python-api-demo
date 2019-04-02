@@ -6,4 +6,10 @@
 
 ##### Container Usage
 
-* Build Container: `make`
+* Build Container: `make build`
+* Run Container: `make run`
+* Build and Run Container: `make up`
+* Stop Container: `make stop`
+* Remove Container: `make remove`
+* Stop and Remove Container: `make destroy`
+
