@@ -1,0 +1,21 @@
+# Create a .env file in the same folder as this file and change the variables.
+# DB_USER=johndoe
+# DB_PASSWORD=somethingsecret123456789
+
+version: '3.1'
+services:
+  db:
+    image: postgres:10-alpine
+    restart: always
+    environment:
+    #- POSTGRES_USER=${DB_USER}
+    - POSTGRES_PASSWORD=${DB_PASSWORD}
+    - POSTGRES_DB=DB1      
+    ports:
+      - "5432:5432"  
+  # app:
+  #   build: .
+  #   restart: always
+  #   depends_on:
+  #     - db
+

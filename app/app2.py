@@ -1,10 +1,18 @@
 import os
 
 from flask import Flask
-from flask_restful import Api, Resource, reqparse
+from flask import render_template
+from flask import request
 
-### Initializing
+from flask_sqlalchemy import SQLAlchemy
+
+### Initializing DB
+database_file = "sqlite:///{}"
+
+### Initializing App
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = database_file
+
 api = Api(app)
 
 # @app.route('/')
