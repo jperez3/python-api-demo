@@ -20,4 +20,7 @@ destroy:
 	make stop remove
 
 debug:
-	docker exec -it python_container /bin/ash	
+	docker exec -it python_container /bin/ash
+
+logs:
+	docker logs python_container		

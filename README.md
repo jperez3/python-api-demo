@@ -14,6 +14,7 @@
 * Remove Container: `make remove`
 * Stop and Remove Container: `make destroy`
 * Debug Container: `make debug`
+* Container Logs: `make logs`
 
 #### Testing
 

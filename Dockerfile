@@ -10,4 +10,4 @@ RUN apk update \
     && chmod +x init.sh \
     && ./init.sh
 
-CMD ["python3","/usr/app/app3.py"]
+CMD ["python3","/usr/app/app.py"]
